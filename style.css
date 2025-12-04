@@ -387,6 +387,19 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/* CLICKABLE PROJECT CARDS */
+.project-card-link {
+  display: block;           
+  color: inherit;           
+}
+
+.project-card-link .details-container.color-container:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.2s ease;
+}
+
+
 /* CONTACT */
 
 #contact {
