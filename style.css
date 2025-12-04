@@ -373,10 +373,10 @@ article .icon {
 
 /* Make ONLY the project cards a fixed, uniform size */
 #projects .details-container.color-container {
-  width: 320px;          /* card width */
-  height: 380px;         /* card height */
-  padding: 0;            /* remove inner padding so image fills nicely */
-  overflow: hidden;      /* crop overflow */
+  width: 400px;          
+  height: 480px;      
+  padding: 0;         
+  overflow: hidden;     
   border-radius: 2rem;
   display: flex;
   align-items: center;
@@ -392,7 +392,7 @@ article .icon {
 #projects .project-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* nicely crop to fill the card */
+  object-fit: cover;    
   display: block;
   margin: 0 auto;
 }
