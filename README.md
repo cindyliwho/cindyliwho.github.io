@@ -1,3 +1,3 @@
-# Anirudha Shastri
+# Cindy Li
 
-This is the source code to [Anirudha's](https://anirudhashastri.github.io/) personal website.
+This is the source code to [Cindy's](https://cindyliwho.github.io/) personal website.
