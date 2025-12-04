@@ -371,12 +371,33 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
-.project-img {
+/* Make ONLY the project cards a fixed, uniform size */
+#projects .details-container.color-container {
+  width: 320px;          /* card width */
+  height: 380px;         /* card height */
+  padding: 0;            /* remove inner padding so image fills nicely */
+  overflow: hidden;      /* crop overflow */
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Base style for project images */
+.project-img {
+  border-radius: 2rem;
+}
+
+/* Control size of project images ONLY in the projects section */
+#projects .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* nicely crop to fill the card */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Title & button styling stay the same */
 .project-title {
   margin: 1rem;
   color: black;
@@ -389,23 +410,14 @@ article .icon {
 
 /* CLICKABLE PROJECT CARDS */
 .project-card-link {
-  display: block;           
-  color: inherit;           
+  display: block;
+  color: inherit;
 }
 
 .project-card-link .details-container.color-container:hover {
   cursor: pointer;
   transform: translateY(-5px);
   transition: transform 0.2s ease;
-}
-
-.project-img {
-  width: 100%;
-  max-width: 350px;   
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
 }
 
 
