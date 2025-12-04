@@ -399,6 +399,15 @@ article .icon {
   transition: transform 0.2s ease;
 }
 
+.project-cover {
+  max-width: 350px;  
+  width: 100%;       
+  height: auto;     
+  display: block;
+  margin: 0 auto;    
+  border-radius: 12px;
+}
+
 
 /* CONTACT */
 
