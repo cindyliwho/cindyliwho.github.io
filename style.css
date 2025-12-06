@@ -370,19 +370,18 @@ article .icon {
 .about-containers {
   display: flex;
   justify-content: center;    
-  gap: 2.5rem;                 
+  gap: 2rem;                 
   flex-wrap: wrap;            
 }
 
-/* Project cards – 3 per row on wide screens */
 #projects .details-container.color-container {
-  flex: 1 1 calc(50% - 2.5rem);   
-  max-width: calc(50% - 2.5rem);  
+  width: 300px;                  /* fixed card width */
+  height: auto;
   padding: 0;
-  border-radius: 1.5rem;
-  overflow: hidden;                  
+  border-radius: 1.2rem;
+  overflow: hidden;
   background: rgb(250, 250, 250);
-  border-color: rgb(163, 163, 163);
+  border: 1px solid rgb(163, 163, 163);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -393,30 +392,14 @@ article .icon {
   width: 100%;
   height: auto;                 
   display: block;
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   object-fit: contain;          
 }
 
-/* Titles/buttons if you add them later */
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-/* CLICKABLE PROJECT CARDS */
-.project-card-link {
-  display: block;
-  color: inherit;
-}
-
+/* Hover effect */
 .project-card-link .details-container.color-container:hover {
   cursor: pointer;
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   transition: transform 0.2s ease;
 }
 
